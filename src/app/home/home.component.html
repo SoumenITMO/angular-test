@@ -1,0 +1,18 @@
+<p> Angular Task </p>
+
+<div>
+    <div>
+        <button (click)="getArticles()"> Article </button>
+        <button (click)="getBlogs()"> Blogs </button>
+        <button (click)="getReports()"> Reports </button>
+    </div>
+    <div>
+        <input #article placeholder="Number of Articles"> 
+        <button (click)="getFilteredArticles(article.value)">Filter</button>
+    </div>
+    <textarea cols="90" rows="30"> {{ data }} </textarea>
+</div>
+
+
+
+
